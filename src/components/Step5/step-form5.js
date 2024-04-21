@@ -7,6 +7,7 @@ import Step5Image from '../../images/step5.png';
 import ContinueButton from "../Button";
 import YellowCircleLoader from '../Step6/Loader';
 import Rate from '../../images/rating.png';
+import {Link} from 'react-router-dom';
 
 export default function FormThree(){
     const [stepCompleted, setStepCompleted] = useState(false);
@@ -24,7 +25,7 @@ export default function FormThree(){
 
     return(
         <div className="m-8 w-5/6 mx-auto">
-                <PreviousButton />
+                <Link to="/step4"><PreviousButton /></Link>
                 <ProgressBar initialProgress={100}/>
 
                 <div className="flex md:flex-row flex-col justify-evenly items-center md:mt-20 my-8 lg:ml-15 md:ml-5 ml-0">

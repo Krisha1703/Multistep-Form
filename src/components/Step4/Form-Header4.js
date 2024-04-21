@@ -1,11 +1,12 @@
 import ProgressBar from '../ProgressBar';
 import Header from '../Header';
 import PreviousButton from '../PreviousButton';
+import {Link} from 'react-router-dom';
 
 export default function FormHeaderFour(){
     return(
         <div className="m-8 sm:w-5/6 mx-auto w-full">
-            <PreviousButton />
+            <Link to="/step3"><PreviousButton /></Link>
             <ProgressBar 
                 initialProgress={60}
             />
